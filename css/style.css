@@ -145,7 +145,8 @@ article {
 .offers > h1{
     padding-left: 1rem;
     color: white;
-    font-size: 2em;
+    font-size: 3vmax;
+    text-align: center;
 }
 .offerbox{
     display: flex;
@@ -153,6 +154,8 @@ article {
     height: 300px;
     flex-direction: row;
     width: 300px;
+    margin-left:auto;
+    margin-right: 100px;
 }
 .offerone, .offerfour{
     flex: 50%;
@@ -164,6 +167,74 @@ article {
     height: 50%;
     background-color: rgb(86, 24, 183);
 }
+.offerone:hover, .offerfour:hover{
+    box-shadow: 0 0 3px 3px rgba(86, 24, 183, 0.5);
+}
+.offertwo:hover, .offerthree:hover{
+    box-shadow: 0 0 3px 3px rgba(183, 24, 110, 0.5);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 1250px) {
+    .offerbox{
+        margin-right: 0;
+        transition-property: margin-right;
+        transition-timing-function: linear;
+        transition-duration: 1s;
+        transition-delay: 0s;
+    }
+}
+/*@media (max-width: 1290px) {
+    .offerbox{
+        margin-right: 90px;
+    }
+}
+@media (max-width: 1280px) {
+    .offerbox{
+        margin-right: 80px;
+    }
+}
+@media (max-width: 1270px) {
+    .offerbox{
+        margin-right: 70px;
+    }
+}@media (max-width: 1260px) {
+    .offerbox{
+        margin-right: 60px;
+    }
+}
+@media (max-width: 1250px) {
+    .offerbox{
+        margin-right: 50px;
+    }
+}
+@media (max-width: 1240px) {
+    .offerbox{
+        margin-right: 40px;
+    }
+}
+@media (max-width: 1230px) {
+    .offerbox{
+        margin-right: 30px;
+    }
+}
+@media (max-width: 1220px) {
+    .offerbox{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1210px) {
+    .offerbox{
+        margin-right: 10px;
+    }
+}
+@media (max-width: 1200px) {
+    .offerbox{
+        margin-right: 0;
+    }
+}*/
 @media (max-width: 1015px) {
     .topnav{
         display: block;
@@ -182,5 +253,8 @@ article {
     }
     .offers{
         flex-direction: column;
+    }
+    .offerbox{
+        margin: 0;
     }
 }
