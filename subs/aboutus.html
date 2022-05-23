@@ -3,27 +3,27 @@
 <head>
     <meta charset="utf-8"/>
     <title>λ'ordinateur</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="js/script.js"></script> <!-- The javascript is essential to make the hamburger menu work -->
+    <script type="text/javascript" src="../js/script.js"></script> <!-- The javascript is essential to make the hamburger menu work -->
 
 
 </head>
 <body id="home">
 <nav class="mainnav">
     <div class="logo">
-        <div><a class="logoname" href="index.html">λ'ordinateur</a></div>
+        <div><a class="logoname" href="../index.html">λ'ordinateur</a></div>
     </div>
-        <!-- Top Navigation Menu -->
+    <!-- Top Navigation Menu -->
     <div class="topnav"> <!-- This is the nav bar for mobile users -->
-        <a class="active" href="index.html">λ'ordinateur</a>
+        <a class="active" href="../index.html">λ'ordinateur</a>
         <!-- Navigation links (hidden by default) -->
         <div class="mylinks" id="myLinks">
             <a href="#">Kategorier</a>
             <a href="#">Erbjudanden</a>
-            <a href="subs/cart.html">Kassa</a>
-            <a href="subs/aboutus.html">Om Oss</a>
+            <a href="../subs/cart.html">Kassa</a>
+            <a href="../subs/aboutus.html">Om Oss</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a class="icon" onclick="myFunction()">
@@ -39,80 +39,57 @@
             <div><a href="#">
                 Erbjudanden
             </a></div>
-            <div><a href="subs/cart.html">
+            <div><a href="../subs/cart.html">
                 Kassa
             </a></div>
-            <div><a href="subs/aboutus.html">
+            <div><a href="../subs/aboutus.html">
                 Om oss
             </a></div>
         </ul>
     </div>
 </nav>
 <article>
-    <div class="offers"> <!-- Here will four temporary offers be placed that have special deals -->
-        <h1>
-            Se våra fantastiska erbjudanden!
+    <div class="mainaboutusdiv">
+        <h1 class="mainaboutustitle">
+            VÅRT FÖRETAG
         </h1>
-        <div class="offerbox">
-            <div class="offerone">
-                <a href="#"><img src="images/motherboardscaled.png" alt="A motherboard"></a>
-            </div>
-            <div class="offertwo">
-                <a href="#"><img src="images/computerscaled.png" alt="A computer"></a>
-            </div>
-            <div class="offerthree">
-                <a href="#"><img src="images/keyboardscaled.png" alt="A keyboard"></a>
-            </div>
-            <div class="offerfour">
-                <a href="#"><img src="images/chairscaled.png" alt="A chair"></a>
-            </div>
-        </div>
     </div>
+    <h1 class="mainaboutussubtitle">
+        BRA GREJER FÖR BRA PRISER
+    </h1>
+    <div class="mainaboutustextdiv">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis odio ut ligula faucibus fringilla. Proin congue, ipsum ut blandit porttitor, tortor lectus volutpat purus, a rhoncus ex eros ut risus. Vivamus bibendum eget leo in lobortis. Etiam lacinia, leo sit amet fermentum faucibus, eros diam faucibus risus, et venenatis elit nibh non augue. Quisque pellentesque molestie molestie. Integer nec fringilla lacus.
+        </p>
+        <p>
+            Duis eu lobortis velit, in aliquam augue. Praesent placerat quam non lectus porta, id volutpat odio placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Nam gravida nisl dapibus ipsum viverra, non lobortis ipsum rhoncus. Donec sed justo in urna vestibulum pulvinar non in dolor.
+        </p>
+    </div>
+    <h1 class="contactus">Kontakta Oss!</h1>
+<div class="form">
+    <form> <!--Contact Us Page-->
 
-    <div class="products"> <!-- Here will all the products be placed under a div with class name productX -->
-        <div class="product1">
-            <a href="subs/cart.html"><div class="img1"></div></a> <!-- The divs have a background image of the product -->
-            <h1>999:-</h1>
-            <p>Corsair K70 RGB</p>
-        </div>
-        <div class="product2">
-            <a href="subs/cart.html"><div class="img2"></div></a>
-            <h1>1999:-</h1>
-            <p>GTX 970 Nvidia</p>
-        </div>
-        <div class="product3">
-            <a href="subs/cart.html"><div class="img3"></div></a>
-            <h1>599:-</h1>
-            <p>Razer Wireless PRO</p>
-        </div>
-        <div class="product4">
-            <a href="subs/cart.html"><div class="img4"></div></a>
-            <h1>99:-</h1>
-            <p>Ethernet RJ45 1 GB/s</p>
-        </div>
-        <div class="product5">
-            <a href="subs/cart.html"><div class="img5"></div></a>
-            <h1>X:-</h1>
-            <p>Placeholder</p>
-        </div>
-        <div class="product6">
-            <a href="subs/cart.html"><div class="img6"></div></a>
-            <h1>X:-</h1>
-            <p>Placeholder</p>
-        </div>
-        <div class="product7">
-            <a href="subs/cart.html"><div class="img7"></div></a>
-            <h1>X:-</h1>
-            <p>Placeholder</p>
-        </div>
-        <div class="product8">
-            <a href="subs/cart.html"><div class="img8"></div></a>
-            <h1>X:-</h1>
-            <p>Placeholder</p>
-        </div>
-    </div>
+        <label for="fname">Förnamn</label>
+        <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
+
+        <label for="lname">Efternamn</label>
+        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+
+        <label for="country">Land</label>
+        <select id="country" name="country">
+            <option value="sweden">Sverige</option>
+            <option value="germany">Tyskland</option>
+            <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Ämne</label>
+        <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:200px"></textarea>
+
+        <input type="submit" value="Skicka in">
+
+    </form>
+</div>
 </article>
-
 <div class="footer">
     <div class="footercontainer">
         <div class="row">
@@ -169,6 +146,4 @@
         </p>
     </div>
 </div>
-
 </body>
-</html>

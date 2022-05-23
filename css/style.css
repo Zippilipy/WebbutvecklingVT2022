@@ -14,14 +14,19 @@
 body {
     min-height: 100vh;
 }
-body::-webkit-scrollbar { /*Changing the scrollbar to make it look better*/
+/*Changing the scrollbar to make it look better for both firefox and chromium*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: lightgray;
+}
+*::-webkit-scrollbar {
     width: 12px;
 }
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: dimgray;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: lightgray;
 
 }
@@ -50,7 +55,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: underline;
 }
 /* Style the hamburger menu */
-.topnav a.icon {
+.topnav > .icon {
     display: block;
     position: absolute;
     right: 0;
@@ -128,13 +133,13 @@ p {
 }
 
 div {
-    margin-left: 0rem;
+    margin-left: 0;
 }
 
 article {
     padding-left: 10%;
     padding-right: 10%;
-    height: 100vh;
+    min-height: 100vh;
 }
 .offers{
     width: 100%;
@@ -187,9 +192,11 @@ img{
 }
 .products > div{
     flex: 25%;
+    margin-bottom: 1rem;
+    height: fit-content;
 }
 .products > div > img{
-    height: fit-content;
+    max-height: 288px;
 }
 .products > div > h1{
     text-align:  right;
@@ -197,8 +204,215 @@ img{
 .products > div > p{
     text-align: center;
 }
-.products > div{
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
+    height: 288px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.img1{
+    background-image: url("../images/corsairkeyboardscaled.png");
+}
+.img2{
+    background-image: url("../images/graphicscardscaled.png");
+}
+.img3{
+    background-image: url("../images/mousescaled.png");
+}
+.img4{
+    background-image: url("../images/ethernetcablescaled.png");
+}
+.img5{
+    background-image: url("https://placehold.co/384x288");
+}
+.img6{
+    background-image: url("https://placehold.co/384x288");
+}
+.img7{
+    background-image: url("https://placehold.co/384x288");
+}
+.img8{
+    background-image: url("https://placehold.co/384x288");
+}
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover, .img7:hover, .img8:hover{
+    box-shadow: 0 0 3px 3px rgba(86, 24, 183, 0.5);
+}
+/* Footer */
+.footercontainer{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer{
+    background: black;
+    color: gray;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: gray;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer1, .footer2, .footer3, .footer4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer1{
+    flex-basis: 30%;
+}
+.footer2{
+    flex: 1;
+    text-align: center;
+}
+.footer2 .footerlogo{
+    color: rgb(183, 24, 157);
+    margin-bottom: 20px;
+}
+.footer3, .footer4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer3 a, .footer4 a{
+    color: white;
+}
+.footer hr{
+    border: none;
+    background: rgb(181, 181, 181);
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+/* Start of css aboutus*/
+.mainaboutusdiv{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: url("../images/epichackpicture.jpg");
+    background-size: contain;
     margin-bottom: 1rem;
+}
+.mainaboutustitle{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+.contactus{
+    margin-top: 2rem;
+    text-align: center;
+}
+.mainaboutussubtitle{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.mainaboutustextdiv{
+    display: flex;
+    margin-left: 18.75%;
+    width: 62.5%
+}
+.mainaboutustextdiv > p{
+    flex: 50%;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: rgb(183, 24, 157);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: rgb(137, 11, 116);
+}
+.form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+.contactheader{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+/* Cart css */
+.table{
+    margin: 80px auto;
+}
+table{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-collapse: collapse;
+}
+.cart-product{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: rgb(183, 24, 157);
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+td > input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: rgb(183, 24, 157);
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.summa{
+    display: flex;
+    justify-content: flex-end;
+}
+.summa table{
+    border-top: 3px solid rgb(183, 24, 157);
+    width: 100%;
+    max-width: 540px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
 }
 @media (max-width: 1250px) {
     .offerbox{
@@ -293,5 +507,16 @@ img{
 @media (max-width: 500px) {
     .products > div{
         flex: 100%;
+    }
+    .cart-product p{
+        display: none;
+    }
+}
+@media (max-width: 1120px) {
+    .footer1, .footer2, .footer3, .footer4{
+        flex: 50%;
+    }
+    .row{
+        text-align: center;
     }
 }

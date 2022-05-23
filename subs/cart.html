@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>λ'ordinateur</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../js/script.js"></script> <!-- The javascript is essential to make the hamburger menu work -->
+
+
+</head>
+<body id="home">
+<nav class="mainnav">
+    <div class="logo">
+        <div><a class="logoname" href="../index.html">λ'ordinateur</a></div>
+    </div>
+    <!-- Top Navigation Menu -->
+    <div class="topnav"> <!-- This is the nav bar for mobile users -->
+        <a class="active" href="../index.html">λ'ordinateur</a>
+        <!-- Navigation links (hidden by default) -->
+        <div class="mylinks" id="myLinks">
+            <a href="#">Kategorier</a>
+            <a href="#">Erbjudanden</a>
+            <a href="../subs/cart.html">Kassa</a>
+            <a href="../subs/aboutus.html">Om Oss</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="navother"> <!-- This is the nav bar for computer users -->
+        <ul>
+            <div><a href="#">
+                Kategorier
+            </a></div>
+            <div><a href="#">
+                Erbjudanden
+            </a></div>
+            <div><a href="../subs/cart.html">
+                Kassa
+            </a></div>
+            <div><a href="../subs/aboutus.html">
+                Om oss
+            </a></div>
+        </ul>
+    </div>
+</nav>
+
+<div class="table">
+    <table>
+        <tr>
+            <th>
+                Produkt
+            </th>
+            <th>
+                Antal
+            </th>
+            <th>
+                Delsumma
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-product">
+                    <img style="max-width: 200px; max-height: 200px;"src="../images/corsairkeyboardscaled.png">
+                    <div>
+                        <p>Corsair K70 RGB</p>
+                        <small>Pris: 999:-</small>
+                        <br>
+                        <a href="">Ta bort</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>
+                999:-
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-product">
+                    <img style="max-width: 200px; max-height: 200px;"src="../images/graphicscardscaled.png">
+                    <div>
+                        <p>GTX 970 Nvidia</p>
+                        <small>Pris: 1999:-</small>
+                        <br>
+                        <a href="">Ta bort</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>
+                1999:-
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-product">
+                    <img style="max-width: 200px; max-height: 200px;"src="../images/mousescaled.png">
+                    <div>
+                        <p>Razer Wireless PRO</p>
+                        <small>Pris: 599:-</small>
+                        <br>
+                        <a href="">Ta bort</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="1">
+            </td>
+            <td>
+                599:-
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-product">
+                    <img style="max-width: 200px; max-height: 200px;"src="../images/ethernetcablescaled.png">
+                    <div>
+                        <p>Ethernet RJ45 1 GB/s</p>
+                        <small>Pris: 99:-</small>
+                        <br>
+                        <a href="">Ta bort</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <input type="number" value="5">
+            </td>
+            <td>
+                495:-
+            </td>
+        </tr>
+    </table>
+
+    <div class="summa">
+        <table>
+            <tr>
+                <td>
+                    Delsumma
+                </td>
+                <td>
+                    3682.8:-
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Moms
+                </td>
+                <td>
+                    409.2:-
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Summa
+                </td>
+                <td>
+                    4092:-
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="footer">
+    <div class="footercontainer">
+        <div class="row">
+            <div class="footer1">
+                <h3>
+                    Köp vår merch
+                </h3>
+                <p>
+                    Njut av hög kvalité merch för billigt pris.
+                </p>
+            </div>
+            <div class="footer2">
+                <h1 class="footerlogo">λ'ordinateur</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit pulvinar elit, et ornare nisl eleifend a. Duis scelerisque lacus a purus luctus, sed iaculis neque pharetra. </p>
+            </div>
+            <div class="footer3">
+                <h3>Länkar</h3>
+                <ul>
+                    <li>
+                        <a href="#">Kuponger</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Retur</a>
+                    </li>
+                    <li>
+                        <a href="#">Bli medlem</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <h3>Våra sociala medier</h3>
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            Copyright 2022 - λ'ordinateur
+        </p>
+    </div>
+</div>
+</body>
