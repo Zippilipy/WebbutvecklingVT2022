@@ -11,6 +11,13 @@
 
 </head>
 <body id="home">
+<div class="sidebar" id="sideBar">
+    <a class="closebutton"onclick="sidebarFunction()">Stäng</a>
+    <a href="#">Kategori 1</a>
+    <a href="#">Kategori 2</a>
+    <a href="#">Kategori 3</a>
+    <a href="#">Kategori 4</a>
+</div>
 <nav class="mainnav">
     <div class="logo">
         <div><a class="logoname" href="../index.html">λ'ordinateur</a></div>
@@ -20,23 +27,23 @@
         <a class="active" href="../index.html">λ'ordinateur</a>
         <!-- Navigation links (hidden by default) -->
         <div class="mylinks" id="myLinks">
-            <a href="#">Kategorier</a>
-            <a href="#">Erbjudanden</a>
+            <a onclick="sidebarFunction()">Kategorier</a>
+            <a href="../subs/offers.html">Erbjudanden</a>
             <a href="../subs/cart.html">Kassa</a>
             <a href="../subs/aboutus.html">Om Oss</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a class="icon" onclick="myFunction()">
+        <a class="icon" onclick="hamburgerFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 
     <div class="navother"> <!-- This is the nav bar for computer users -->
         <ul>
-            <div><a href="#">
+            <div><a onclick="sidebarFunction()">
                 Kategorier
             </a></div>
-            <div><a href="#">
+            <div><a href="../subs/offers.html">
                 Erbjudanden
             </a></div>
             <div><a href="../subs/cart.html">
@@ -49,7 +56,7 @@
     </div>
 </nav>
 
-<div class="table">
+<div class="divtable">
     <table>
         <tr>
             <th>
